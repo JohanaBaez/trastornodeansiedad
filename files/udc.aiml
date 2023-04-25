@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>TELL MY ABAUT*</pattern>
+    <template>
+        <think><set name="eso">><star/></set></think>
+        You can find information here<star/>
+        <button>
+            <text>you click on the link</text>
+	        <url>https://es.wikipedia.org/wiki/Trastorno_de_ansiedad</url>
+        </button>
+    </template>
+  </category>
+</aiml>

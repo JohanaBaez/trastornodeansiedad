@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pottern>TELL MY ABAUT *</pottern>
+	    <template>
+	        <think><set name="eso"><star/></set></think>
+	        You can find information here <br/>
+	        <formal>
+	            <star/>
+	        </formal>
+	        
+	        
+	    <button>
+	        <text>you click on the link</text>
+	        <url>https://es.wikipedia.org/wiki/Trastorno_de_ansiedad</url>
+	    </button>     
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>GIVE ME MORE INFORMATION ABOUT THAT DISORDER</pattern>
+	    <template>
+	        <condition name="eso">
+	            <li value="a"><srai>deme informacion de<get name="eso"/></srai></li>
+	            <li>That it gives you information about what disorder?</li>
+	        </condition>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>*</pattern>
+	    <that>That it gives you information about what disorder?</that>
+	    <template>
+	        <srai>dame informacion de</srai>
+	    </template>
+	</category>
+	
+
+	<category>
+	    <pattern>SHOW ME THE SYMPTOMS OF *</pattern>
+	    <template>
+	        <think><set name="trastorno"><star/></set></think>
+	        Here are the symptoms of😊<br/>
+	        <formal>
+	            <star/>
+	        </formal>
+	        
+	        <button>
+	            <text>you click on the link</text>
+	            <url>https://www.mayoclinic.org/es-es/diseases-conditions/anxiety/symptoms-causes/syc-20350961</url>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>SHOW ME THE CAUSES OF * </pattern>
+	    <template>
+	        <think><set name="trastorno"><star/></set></think>
+	        Here are the causes😊<br/>
+	        <formal>
+	            <star/>
+	        </formal>
+	    </template>
+	</category>
+
+
+	
+	
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+</aiml>
